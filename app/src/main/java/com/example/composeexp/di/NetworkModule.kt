@@ -1,6 +1,7 @@
 package com.example.composeexp.di
 
 import com.example.composeexp.api.MovieApi
+import com.example.composeexp.utils.AppConstant.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,7 +18,7 @@ class NetworkModule {
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit {
-        return Retrofit.Builder().baseUrl("https://api.themoviedb.org/")
+        return Retrofit.Builder().baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create()).build()
     }
 
