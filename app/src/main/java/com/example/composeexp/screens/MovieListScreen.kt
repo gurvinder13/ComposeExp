@@ -63,8 +63,6 @@ fun MovieListScreen() {
     }
 }
 
-
-
 @OptIn(ExperimentalGlideComposeApi::class)
 @Composable
 fun MovieItem(result: Result) {

@@ -1,12 +1,9 @@
 package com.example.composeexp.repository
 
 import com.example.composeexp.api.MovieApi
-import com.example.composeexp.model.MovieListResponse
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharedFlow
-import kotlinx.coroutines.flow.StateFlow
 import com.example.composeexp.model.Result
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 class MovieRepository @Inject constructor(private val movieApi: MovieApi) {

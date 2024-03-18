@@ -2,7 +2,6 @@ package com.example.composeexp.viewModels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.composeexp.model.MovieListResponse
 import com.example.composeexp.model.Result
 import com.example.composeexp.repository.MovieRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
